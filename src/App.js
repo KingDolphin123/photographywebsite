@@ -13,17 +13,18 @@ import {
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="*" element={<Navigate to="/home" replace />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/packages" element={<Packages />} />
-        </Routes>
-      </div>
-    </Router>
+    // <Router>
+    //   <div>
+    //     <Navbar />
+    //     <Routes>
+    //       <Route path="*" element={<Navigate to="/home" replace />} />
+    //       <Route exact path="/home" element={<Home />} />
+    //       <Route exact path="/about" element={<About />} />
+    //       <Route exact path="/packages" element={<Packages />} />
+    //     </Routes>
+    //   </div>
+    // </Router>
+    <p>hi</p>
   );
 }
 
