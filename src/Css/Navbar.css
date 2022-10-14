@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bebas+Neue&family=Montserrat&family=Nanum+Myeongjo:wght@700&family=Raleway:wght@100&family=Sacramento&family=Staatliches&family=Tangerine:wght@700&family=Unica+One&family=Zen+Kurenaido&display=swap");
+
+.logo {
+  height: 40%;
+}
+.navlinksflex {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.finaldiv {
+  background-color: white;
+
+  width: 100vw;
+  height: 130px;
+  position: fixed;
+  transition: height 0.5s;
+}
+.nav2 {
+  height: 80px;
+  transition: height 0.5s;
+  background-color: white;
+}
+.text {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none; /* no underline */
+  color:black;
+}
+.text:hover {
+  transform: skewY(3deg) skewX(-2deg);
+  color: #31628D;
+}
+
+@media only screen and (min-width: 600px) {
+  .navlinksflex {
+    margin-left: 90px;
+    transition: 0.2s;
+  }
+  .text {
+    margin-left: 50px;
+    font-size: 150%;
+    transition: 0.2s;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navlinksflex {
+    margin-left: 5vw;
+    transition: 0.2s;
+  }
+  .text {
+    margin-left: 7%;
+    font-size: 125%;
+    transition: 0.2s;
+  }
+}

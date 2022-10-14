@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bebas+Neue&family=Montserrat&family=Nanum+Myeongjo:wght@700&family=Raleway:wght@100&family=Sacramento&family=Staatliches&family=Tangerine:wght@700&family=Unica+One&family=Zen+Kurenaido&display=swap");
+
+.about{
+    padding-top:200px;
+    height:100vw;
+}
+.picture{
+    border-radius: 1%;
+    height:25vw;
+    width:auto;
+    padding-right:5vw;
+}
+.aboutdiv{
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.abouttext{
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none; /* no underline */
+    color:black;
+    font-size: 1.5vw;
+}

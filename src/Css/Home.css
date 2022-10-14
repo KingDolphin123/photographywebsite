@@ -1,0 +1,23 @@
+.bigdiv{
+    margin-top:140px;
+    margin-left:.5vw;
+    margin-right:.5vw;
+    display:inline-grid;
+    grid-gap: .5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pic{
+    margin-bottom:.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:32.65vw;
+}
+@media only screen and (max-width: 600px) {
+    .bigdiv{
+        grid-template-columns: 1fr;
+    }
+    .pic{
+        width:99vw;
+    }
+}
