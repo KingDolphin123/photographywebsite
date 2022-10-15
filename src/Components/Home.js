@@ -23,6 +23,7 @@ import pic21 from "../photosandassets/IMG_4621.jpg";
 import pic22 from "../photosandassets/IMG_4637-1.jpg";
 import pic23 from "../photosandassets/IMG_4770.jpg";
 import pic24 from "../photosandassets/IMG_4741.jpg";
+// import uparrow from "../photosandassets/uparrow.png";
 
 const Home = () => {
   let picarr3 = [pic1, pic4, pic7, pic10, pic13, pic16, pic19, pic22];
@@ -41,23 +42,25 @@ const Home = () => {
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
   return (
-    <div className="bigdiv">
-      <div className="col1">
-        {picarr11.map((pic) => (
-          <img className="pic" key={pic} src={pic} alt={pic} />
-        ))}
-      </div>
-      <div className="col2">
-        {picarr12.map((pic) => (
-          <img className="pic" key={pic} src={pic} alt={pic} />
-        ))}
-      </div>
-      <div className="col3">
-        {picarr13.map((pic) => (
-          <img className="pic" key={pic} src={pic} alt={pic} />
-        ))}
+    <div>
+      <div className="bigdiv">
+        <div className="col1">
+          {picarr11.map((pic) => (
+            <img className="pic" key={pic} src={pic} alt={pic} />
+          ))}
+        </div>
+        <div className="col2">
+          {picarr12.map((pic) => (
+            <img className="pic" key={pic} src={pic} alt={pic} />
+          ))}
+        </div>
+        <div className="col3">
+          {picarr13.map((pic) => (
+            <img className="pic" key={pic} src={pic} alt={pic} />
+          ))}
+        </div>
       </div>
     </div>
   );
-};
+}
 export default Home;
