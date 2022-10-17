@@ -26,7 +26,7 @@ function App() {
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/packages" element={<Packages />} />
-          <Route exact path="/free" element={<Rr />} />
+          <Route exact path="/amogus" element={<Rr />} />
         </Routes>
         <Footer />
       </div>
