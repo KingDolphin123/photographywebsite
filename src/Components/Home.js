@@ -19,10 +19,10 @@ import pic17 from "../photosandassets/IMG_9146-1.jpg";
 import pic18 from "../photosandassets/IMG_9238-1.jpg";
 import pic19 from "../photosandassets/IMG_9293.jpg";
 import pic20 from "../photosandassets/IMG_9314.jpg";
-import pic21 from "../photosandassets/IMG_4621.jpg";
-import pic22 from "../photosandassets/IMG_4637-1.jpg";
-import pic23 from "../photosandassets/IMG_4770.jpg";
-import pic24 from "../photosandassets/IMG_4741.jpg";
+import pic21 from "../photosandassets/IMG_4621-min.jpg";
+import pic22 from "../photosandassets/IMG_4637-1-min.jpg";
+import pic23 from "../photosandassets/IMG_4770-min.jpg";
+import pic24 from "../photosandassets/IMG_4741-min.jpg";
 // import uparrow from "../photosandassets/uparrow.png";
 
 const Home = () => {
