@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bebas+Neue&family=Montserrat&family=Nanum+Myeongjo:wght@700&family=Raleway:wght@100&family=Sacramento&family=Staatliches&family=Tangerine:wght@700&family=Unica+One&family=Zen+Kurenaido&display=swap");
 
 .about{
-    padding-top:260px;
+    padding-top:230px;
     height:(100vw-260px);
 }
 .picture{
@@ -28,6 +28,9 @@
     font-size:40px;
 }
 @media only screen and (max-width: 1200px) {
+    .about{
+        padding-top:175px;
+    }
     .aboutdiv{
         margin-left:60px;
         width:850px;

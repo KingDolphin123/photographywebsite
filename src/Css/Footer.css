@@ -1,0 +1,30 @@
+.footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.up {
+  height: 0px;
+  transition: 0.5s;
+}
+.down {
+  height: 60px;
+  transition: 0.5s;
+}
+.footerpic {
+  padding-top: 8px;
+  margin-right: 20px;
+  height: 40px;
+}
+.footertext{
+    font-family: "Bebas Neue", cursive;
+    color:black;
+    padding-top: 16px;
+    margin-right: 20px;
+}

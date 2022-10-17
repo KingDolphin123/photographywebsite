@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Bebas+Neue&family=Montserrat&family=Nanum+Myeongjo:wght@700&family=Raleway:wght@100&family=Sacramento&family=Staatliches&family=Tangerine:wght@700&family=Unica+One&family=Zen+Kurenaido&display=swap");
 
 .logo {
-  height: 40%;
+  width: auto;
+  height:60px;
 }
 .navlinksflex {
   height: 100%;
