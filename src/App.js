@@ -4,6 +4,8 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Packages from "./Components/Packages";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+
 import "./Css/App.css";
 import {
   BrowserRouter as Router,
@@ -24,6 +26,7 @@ function App() {
         <Routes>
           <Route path="*" element={<Navigate to="/home" replace />} />
           <Route exact path="/home" element={<Home />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/packages" element={<Packages />} />
           <Route exact path="/amogus" element={<Rr />} />

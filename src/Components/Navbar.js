@@ -28,10 +28,6 @@ const Navbar = () => {
         <Link className="logo" to="/Home">
           <img className="logo" alt="logo" src={logo}></img>
         </Link>
-        <Link className="text" to="/Home">
-          {" "}
-          Home{" "}
-        </Link>
         <Link className="text" to="/About">
           {" "}
           About{" "}
@@ -39,6 +35,10 @@ const Navbar = () => {
         <Link className="text" to="/Packages">
           {" "}
           Packages{" "}
+        </Link>
+        <Link className="text" to="/Contact">
+          {" "}
+          Contact Me{" "}
         </Link>
       </div>
     </div>
