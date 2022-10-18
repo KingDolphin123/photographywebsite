@@ -18,10 +18,9 @@ function Rr() {
   return null;
 }
 function App() {
-
   return (
     <Router>
-      <div>
+      <div className = "setmax">
         <Navbar />
         <Routes>
           <Route path="*" element={<Navigate to="/home" replace />} />

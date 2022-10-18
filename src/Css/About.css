@@ -2,7 +2,8 @@
 
 .about{
     padding-top:230px;
-    height:(100vw-260px);
+    max-height:(100vw-260px);
+
 }
 .picture{
     border-radius: 1%;
