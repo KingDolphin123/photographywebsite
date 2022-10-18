@@ -43,7 +43,7 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
           className="inputform"
         />
-        <button onClick={submit}>Submit</button>
+        <button className="inputform but" onClick={submit}>Submit</button>
       </div>
       <div className="footer">
         <p className="footertext">Copyright Jacob Lee 2022</p>

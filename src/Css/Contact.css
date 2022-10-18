@@ -23,10 +23,13 @@
     padding:1rem;
     margin:20px;
     font-family: "Bebas Neue", cursive;
-
 }
 .contacttext{
     font-family: "Bebas Neue", cursive;
     color:black;
     font-size:250%;
+}
+.but{
+    width:20vw;
+    padding:.5rem;
 }
