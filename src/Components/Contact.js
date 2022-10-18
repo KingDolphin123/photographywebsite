@@ -1,22 +1,66 @@
 import "../Css/Contact.css";
+import emailjs from "emailjs-com";
+import { useState } from "react";
+import insta from "../photosandassets/insta.png";
+import linkedin from "../photosandassets/link.png";
 
 const Contact = () => {
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const submit = () => {
+    const serviceID = "service_gwttkc3";
+    const templateID = "template_8u3euar";
+    const publicKey = "vOAm-rr8fBIQQW1Gi";
+    const params = { userName, email, message };
+    emailjs.send(serviceID, templateID, params, publicKey);
+    setUserName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
-    <div className="contact">
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="34adab56-b6aa-4226-9540-b12191558684" />
-
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <textarea name="message" required></textarea>
+    <div className = "contactfinal">
+      <div className="contact">
         <input
-          type="hidden"
-          name="redirect"
-          value="https://web3forms.com/success"
+          type="text"
+          placeholder="Your Name"
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+          className="inputform"
         />
-
-        <button type="submit">Submit Form</button>
-      </form>
+        <input
+          type="text"
+          placeholder="Your Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="inputform"
+        />
+        <textarea
+          type="text"
+          placeholder="Your Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          className="inputform"
+        />
+        <button onClick={submit}>Submit</button>
+      </div>
+      <div className="footer">
+        <p className="footertext">Copyright Jacob Lee 2022</p>
+        <a
+          href="https://www.instagram.com/jlee_photo_/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="footerpic" alt="instagram" src={insta}></img>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jacob-lee-230984218/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="footerpic" alt="linkedin" src={linkedin}></img>
+        </a>
+      </div>
     </div>
   );
 };
