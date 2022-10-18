@@ -16,7 +16,7 @@ const Contact = () => {
     const templateID = "template_8u3euar";
     const publicKey = "vOAm-rr8fBIQQW1Gi";
     const params = { userName, email, message };
-    // emailjs.send(serviceID, templateID, params, publicKey);
+    emailjs.send(serviceID, templateID, params, publicKey);
     setUserName("");
     setEmail("");
     setMessage("");
