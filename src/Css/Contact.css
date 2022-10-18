@@ -1,7 +1,7 @@
 .contactfinal{
-    padding-top:260px;
+    padding-top:200px;
     background-color: white;
-    height:100vw-260px;
+    height:100vw-200px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -12,7 +12,21 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    background-color: #f6f8ff;
+    padding:5rem;
+
 }
 .inputform{
-    
+    width:40vw;
+    border: none;
+    background-color: #C1C7D8;
+    padding:1rem;
+    margin:20px;
+    font-family: "Bebas Neue", cursive;
+
+}
+.contacttext{
+    font-family: "Bebas Neue", cursive;
+    color:black;
+    font-size:250%;
 }

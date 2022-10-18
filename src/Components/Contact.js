@@ -21,6 +21,7 @@ const Contact = () => {
   return (
     <div className = "contactfinal">
       <div className="contact">
+        <p className = "contacttext">Contact Me</p>
         <input
           type="text"
           placeholder="Your Name"
