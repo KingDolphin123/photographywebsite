@@ -3,7 +3,6 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Packages from "./Components/Packages";
-import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 
 import "./Css/App.css";
@@ -30,7 +29,6 @@ function App() {
           <Route exact path="/packages" element={<Packages />} />
           <Route exact path="/amogus" element={<Rr />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

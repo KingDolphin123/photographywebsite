@@ -1,4 +1,5 @@
 import "../Css/Home.css";
+import Footer from "../Components/Footer";
 import pic1 from "../photosandassets/IMG_5065.jpg";
 import pic2 from "../photosandassets/IMG_5102.jpg";
 import pic3 from "../photosandassets/IMG_5390.jpg";
@@ -60,6 +61,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Footer />
+
     </div>
   );
 }
