@@ -8,20 +8,28 @@ const Contact = () => {
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [messagesend, setMessagesend] = useState("email");
   const submit = () => {
+    setMessagesend("email sent");
+    handleRender();
     const serviceID = "service_gwttkc3";
     const templateID = "template_8u3euar";
     const publicKey = "vOAm-rr8fBIQQW1Gi";
     const params = { userName, email, message };
-    emailjs.send(serviceID, templateID, params, publicKey);
+    // emailjs.send(serviceID, templateID, params, publicKey);
     setUserName("");
     setEmail("");
     setMessage("");
   };
+  const handleRender = () => {
+    setTimeout(() => {
+       setMessagesend("email");
+    }, 3000);
+  }
   return (
-    <div className = "contactfinal">
+    <div className="contactfinal">
       <div className="contact">
-        <p className = "contacttext">Contact Me</p>
+        <p className="contacttext">Contact Me</p>
         <input
           type="text"
           placeholder="Your Name"
@@ -43,7 +51,10 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
           className="inputform"
         />
-        <button className="inputform but" onClick={submit}>Submit</button>
+        <button className="inputform but" onClick={submit}>
+          Submit
+        </button>
+        <p className = {messagesend}>Email Sent!</p>
       </div>
       <div className="footer">
         <p className="footertext">Copyright Jacob Lee 2022</p>

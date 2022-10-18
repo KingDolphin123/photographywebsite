@@ -13,7 +13,7 @@
 }
 .aboutdiv{
     margin-left:120px;
-    width: 1050px;
+    width: 1200px;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -26,15 +26,15 @@
     font-size: 27px;
 }
 .hi{
-    font-size:40px;
+    font-size:60px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
     .about{
         padding-top:175px;
     }
     .aboutdiv{
         margin-left:60px;
-        width:850px;
+        width:900px;
     }
     .picture{
         height:350px;
@@ -50,12 +50,13 @@
         font-size:40px;
     }
 }
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 950px) {
     .aboutdiv{
         margin-left:10vw;
         flex-direction: column;
         justify-content: center;
         width:80vw;
+        margin-bottom: 100px;
     }
     .picture{
         height:60vw;

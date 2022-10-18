@@ -33,3 +33,17 @@
     width:20vw;
     padding:.5rem;
 }
+.inputform:hover{
+    background-color: rgb(32, 37, 42);
+    color:white;
+    transition: .5s;
+}
+.email{
+    opacity:0;
+    transition: .5s;
+
+}
+.sent{
+    opacity:100;
+    transition: .5s;
+}
