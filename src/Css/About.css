@@ -2,8 +2,8 @@
 
 .about{
     padding-top:230px;
-    max-height:(100vw-260px);
-
+    max-height:100%;
+    overflow:hidden;
 }
 .picture{
     border-radius: 1%;
