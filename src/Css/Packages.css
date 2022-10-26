@@ -1,39 +1,126 @@
+*{
+  z-index: 0;
+}
 .packagesbig {
   padding-top: 150px;
   max-height: 100%;
   overflow: hidden;
 }
 .packagesflex {
-  /* width:100vw;
-    display:flex;
-    flex:1 1 0;
-    flex-direction: row; */
-  /* justify-content: center;
-    align-items: flex-start; */
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.picflex {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-.solo {
-  height: 50vh;
-  width: auto;
-}
-.so {
-  align-items: flex-end;
-}
-.pl {
+  flex: 1 1 0;
+  flex-direction: row;
+  justify-content: center;
   align-items: flex-start;
 }
-.soloplus {
-  height: 50vh;
+.picflex {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 10px;
+  background-color: black;
+}
+.picu {
+  height: 550px;
+  opacity: 0.4;
   width: auto;
+  transition: 0.5s;
 }
 .packagestext {
-  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  text-shadow: 2px 2px 5px black;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+.off {
+  position: absolute;
+  transform: translate(-50%, 100%);
+  width: 75%;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.on {
+  opacity: 100;
+  transition: opacity 0.5s;
+}
+.mon {
+  top: 25%;
+  font-size: 22px;
+}
+.picon {
+  filter: blur(15px);
+  transition: 0.5s;
+}
+@media only screen and (max-width: 1175px) {
+  .picu {
+    height: 400px;
+  }
+  .packagestext {
+    font-size: 28px;
+  }
+  .mon {
+    font-size: 18px;
+  }
+  .off {
+    transform: translate(-50%, 80%);
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .picu {
+    height: 334px;
+  }
+  .packagestext {
+    font-size: 23px;
+  }
+  .mon {
+    font-size: 14px;
+  }
+  .off {
+    transform: translate(-50%, 60%);
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .picu {
+    height: 270px;
+  }
+  .packagestext {
+    font-size: 20px;
+  }
+  .mon {
+    font-size: 13px;
+  }
+  .off {
+    transform: translate(-50%, 40%);
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .packagesflex {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .picu {
+    height: 550px;
+  }
+  .packagestext {
+    font-size: 35px;
+  }
+  .mon {
+    font-size: 20px;
+  }
+  .off {
+    transform: translate(-50%, 80%);
+    font-size: 20px;
+  }
+}
+
+
