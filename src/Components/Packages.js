@@ -10,12 +10,14 @@ const Packages = () => {
   const [PicText, setPicText] = useState("packagestext off");
   const [PicText2, setPicText2] = useState("packagestext off");
   const [PicText3, setPicText3] = useState("packagestext off");
+  const [hov, setHov] = useState("hov playing");
   const [solopic, setSoloPic] = useState("picu solo");
   const [grouppicpic, setGroupPic] = useState("picu group");
   const [solopluspic, setSoloPlus] = useState("picu soloplus");
   const onHover1 = () => {
     setPicText("packagestext off on");
     setSoloPic("picu solo picon");
+    setHov("hov")
   };
   const onHover2 = () => {
     setPicText2("packagestext off on");
@@ -45,12 +47,15 @@ const Packages = () => {
               src={solo}
               alt="solopic"
             />
-            <p className="packagestext">Solo Pic</p>
+            <p className="packagestext">Solo Pics</p>
             <p className="packagestext mon">$75-$100</p>
             <p onMouseEnter={onHover1} className={PicText}>
               Individual portraits and stills, focused on highlighting
               individual beauty and wonder. 30 minute shoot and 10-15 final
               edited photos.
+            </p>
+            <p onMouseEnter={onHover1} className={hov}>
+              Click to see details
             </p>
           </div>
           <div className="picflex">
@@ -61,8 +66,8 @@ const Packages = () => {
               src={grouppic}
               alt="grouppic"
             />
-            <p className="packagestext">Group Pic</p>
-            <p className="packagestext mon">$50 each</p>
+            <p className="packagestext">Group Pics</p>
+            <p className="packagestext mon">$50 per person</p>
             <p onMouseEnter={onHover2} className={PicText2}>
               Group portraits and stills, focused on highlighting group dynamics
               and relationships. 30 minute shoot and 10-15 final edited photos.
@@ -76,7 +81,7 @@ const Packages = () => {
               src={soloplus}
               alt="soloplucpic"
             />
-            <p className="packagestext">Solo Plus Pic</p>
+            <p className="packagestext">Solo Plus Pics</p>
             <p className="packagestext mon">$100-150</p>
             <p onMouseEnter={onHover3} className={PicText3}>
               Individual portraits and stills, focused on highlighting

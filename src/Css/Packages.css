@@ -1,6 +1,11 @@
 *{
   z-index: 0;
 }
+@keyframes inout {
+  0%   {top: 60%;}
+  50%  {top: 50%;}
+  100% {top: 60%;}
+}
 .packagesbig {
   padding-top: 150px;
   max-height: 100%;
@@ -55,6 +60,16 @@
 .picon {
   filter: blur(15px);
   transition: 0.5s;
+}
+.hov{
+  font-family: "Bebas Neue", cursive;
+  left:50%;
+  transform: translate(-50%, 0%);
+  position:absolute;
+  opacity:0;
+}
+.playing{
+  animation: inout 5s infinite;
 }
 @media only screen and (max-width: 1175px) {
   .picu {
@@ -120,6 +135,9 @@
   .off {
     transform: translate(-50%, 80%);
     font-size: 20px;
+  }
+  .hov{
+    opacity: 100;
   }
 }
 
