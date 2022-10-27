@@ -48,8 +48,12 @@ const Packages = () => {
               src={solo}
               alt="solopic"
             />
-            <p className="packagestext">Solo Pics</p>
-            <p className="packagestext mon">$75-$100</p>
+            <p onMouseEnter={onHover1} className="packagestext">
+              Solo Pics
+            </p>
+            <p onMouseEnter={onHover1} className="packagestext mon">
+              $75-$100
+            </p>
             <p onMouseEnter={onHover1} className={PicText}>
               Individual portraits and stills, focused on highlighting
               individual beauty and wonder. 30 minute shoot and 10-15 final
@@ -61,7 +65,7 @@ const Packages = () => {
               </p>
             </MobileView>
           </div>
-          <div className="picflex">
+          <div onMouseEnter={onHover2} className="picflex">
             <img
               onMouseEnter={onHover2}
               onMouseLeave={onLeave}
@@ -69,8 +73,12 @@ const Packages = () => {
               src={grouppic}
               alt="grouppic"
             />
-            <p className="packagestext">Group Pics</p>
-            <p className="packagestext mon">$50 per person</p>
+            <p onMouseEnter={onHover2} className="packagestext">
+              Group Pics
+            </p>
+            <p onMouseEnter={onHover2} className="packagestext mon">
+              $50 per person
+            </p>
             <p onMouseEnter={onHover2} className={PicText2}>
               Group portraits and stills, focused on highlighting group dynamics
               and relationships. 30 minute shoot and 10-15 final edited photos.
@@ -84,8 +92,12 @@ const Packages = () => {
               src={soloplus}
               alt="soloplucpic"
             />
-            <p className="packagestext">Solo Plus Pics</p>
-            <p className="packagestext mon">$100-150</p>
+            <p onMouseEnter={onHover3} className="packagestext">
+              Solo Plus Pics
+            </p>
+            <p onMouseEnter={onHover3} className="packagestext mon">
+              $100-150
+            </p>
             <p onMouseEnter={onHover3} className={PicText3}>
               Individual portraits and stills, focused on highlighting
               individual beauty and wonder. 45 minute shoot and 20-30 final

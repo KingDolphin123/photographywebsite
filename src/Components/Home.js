@@ -25,7 +25,7 @@ import Footer from "./Footer";
 // import pic23 from "../photosandassets/IMG_4770.jpg";
 // import pic24 from "../photosandassets/IMG_4741.jpg";
 // // import uparrow from "../photosandassets/uparrow.png";
- 
+
 import pic1 from "../photosandassets/finpics/IMG_5065.jpg";
 import pic2 from "../photosandassets/finpics/IMG_5227-min.jpg";
 import pic3 from "../photosandassets/finpics/IMG_5250-min.jpg";
@@ -47,13 +47,14 @@ import pic19 from "../photosandassets/finpics/IMG_9146-1.jpg";
 import pic20 from "../photosandassets/finpics/IMG_9238-1.jpg";
 import pic21 from "../photosandassets/finpics/IMG_9293.jpg";
 import pic22 from "../photosandassets/finpics/IMG_9314.jpg";
- 
- 
- 
+// import pic23 from "../photosandassets/finpics/IMG_5611-min.jpg";
+// import pic24 from "../photosandassets/finpics/IMG_5619-2-min.jpg";
+// import pic25 from "../photosandassets/finpics/IMG_5648-min.jpg";
+
 const Home = () => {
-  let picarr3 = [pic1, pic4, pic7, pic10, pic16, pic19, pic22];
-  let picarr2 = [pic2, pic6, pic11, pic14, pic17, pic20,pic13 ];
-  let picarr = [pic3, pic9, pic12, pic15, pic18, pic5, pic21];
+  let picarr3 = [pic1, pic4, pic7, pic10, pic16, pic19, pic22, ];
+  let picarr2 = [pic2, pic6, pic11, pic14, pic17, pic20, pic13, ];
+  let picarr = [pic3, pic9, pic12, pic15, pic18, pic5, pic21, ];
   let picarr11 = picarr
     .map((value) => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
