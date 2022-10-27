@@ -1,10 +1,11 @@
 import "../Css/Packages.css";
-import grouppic from "../photosandassets/finpics/IMG_5426.jpg";
+import grouppic from "../photosandassets/finpics/IMG_5426-min.jpg";
 import soloplus from "../photosandassets/IMG_9146-1.jpg";
-import solo from "../photosandassets/finpics/IMG_5227.jpg";
+import solo from "../photosandassets/finpics/IMG_5227-min.jpg";
 import insta from "../photosandassets/insta.png";
 import linkedin from "../photosandassets/link.png";
 import { useState } from "react";
+import { MobileView } from "react-device-detect";
 
 const Packages = () => {
   const [PicText, setPicText] = useState("packagestext off");
@@ -17,7 +18,7 @@ const Packages = () => {
   const onHover1 = () => {
     setPicText("packagestext off on");
     setSoloPic("picu solo picon");
-    setHov("hov")
+    setHov("hov");
   };
   const onHover2 = () => {
     setPicText2("packagestext off on");
@@ -54,9 +55,11 @@ const Packages = () => {
               individual beauty and wonder. 30 minute shoot and 10-15 final
               edited photos.
             </p>
-            <p onMouseEnter={onHover1} className={hov}>
-              Click to see details
-            </p>
+            <MobileView>
+              <p onMouseEnter={onHover1} className={hov}>
+                Click to see details
+              </p>
+            </MobileView>
           </div>
           <div className="picflex">
             <img

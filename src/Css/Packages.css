@@ -66,7 +66,7 @@
   left:50%;
   transform: translate(-50%, 0%);
   position:absolute;
-  opacity:0;
+  opacity:100;
 }
 .playing{
   animation: inout 5s infinite;
@@ -101,7 +101,7 @@
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 740px) {
+/* @media only screen and (max-width: 740px) {
   .picu {
     height: 270px;
   }
@@ -115,9 +115,9 @@
     transform: translate(-50%, 40%);
     font-size: 14px;
   }
-}
+} */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 821px) {
   .packagesflex {
     flex-direction: column;
     justify-content: flex-start;

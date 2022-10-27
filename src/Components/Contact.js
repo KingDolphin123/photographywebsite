@@ -56,7 +56,7 @@ const Contact = () => {
         </button>
         <p className = {messagesend}>Email Sent!</p>
       </div>
-      <div className="footer">
+      <div className="footer oncontact">
         <p className="footertext">Copyright Jacob Lee 2022</p>
         <a
           href="https://www.instagram.com/jlee_photo_/"
