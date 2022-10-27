@@ -24,11 +24,14 @@
   padding: 1rem;
   margin: 15px;
   font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+
 }
 .contacttext {
   font-family: "Bebas Neue", cursive;
   color: black;
   font-size: 250%;
+  text-decoration: none;
 }
 .but {
   width: 20vw;
