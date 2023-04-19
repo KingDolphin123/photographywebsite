@@ -37,24 +37,28 @@ import pic9 from "../photosandassets/finpics/IMG_5460-min.jpg";
 import pic10 from "../photosandassets/finpics/IMG_5464-min.jpg";
 import pic11 from "../photosandassets/finpics/IMG_5499-min.jpg";
 import pic12 from "../photosandassets/finpics/IMG_6011.jpg";
-import pic13 from "../photosandassets/finpics/IMG_6253.jpg";
+// import pic13 from "../photosandassets/finpics/IMG_6253.jpg";
 import pic14 from "../photosandassets/finpics/IMG_6305.jpg";
-import pic15 from "../photosandassets/finpics/IMG_7043.jpg";
-import pic16 from "../photosandassets/finpics/IMG_7061.jpg";
-import pic17 from "../photosandassets/finpics/IMG_7163.jpg";
+// import pic15 from "../photosandassets/finpics/IMG_7043.jpg";
+// import pic16 from "../photosandassets/finpics/IMG_7061.jpg";
+// import pic17 from "../photosandassets/finpics/IMG_7163.jpg";
 import pic18 from "../photosandassets/finpics/IMG_9098.jpg";
 import pic19 from "../photosandassets/finpics/IMG_9146-1.jpg";
 import pic20 from "../photosandassets/finpics/IMG_9238-1.jpg";
 import pic21 from "../photosandassets/finpics/IMG_9293.jpg";
 import pic22 from "../photosandassets/finpics/IMG_9314.jpg";
+import pic23 from "../photosandassets/finpics/_MG_9804-min.jpg";
+import pic24 from "../photosandassets/finpics/_MG_9540-min.jpg";
+import pic25 from "../photosandassets/finpics/_MG_9687-min.jpg";
+import pic26 from "../photosandassets/finpics/_MG_9784-min.jpg";
 // import pic23 from "../photosandassets/finpics/IMG_5611-min.jpg";
 // import pic24 from "../photosandassets/finpics/IMG_5619-2-min.jpg";
 // import pic25 from "../photosandassets/finpics/IMG_5648-min.jpg";
 
 const Home = () => {
-  let picarr3 = [pic1, pic4, pic7, pic10, pic16, pic19, pic22, ];
-  let picarr2 = [pic2, pic6, pic11, pic14, pic17, pic20, pic13, ];
-  let picarr = [pic3, pic9, pic12, pic15, pic18, pic5, pic21, ];
+  let picarr3 = [pic1, pic4, pic7, pic10, pic19, pic22, pic23];
+  let picarr2 = [pic2, pic6, pic11, pic14, pic20, pic24, pic26];
+  let picarr = [pic3, pic9, pic12, pic18, pic5, pic21, pic25];
   let picarr11 = picarr
     .map((value) => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
