@@ -8,7 +8,7 @@ const Footer = () => {
   const [scrollDirection, setScrollDirection] = useState("footer up");
 
   const handleNavigation = useCallback(
-    (e) => {
+    (e) => { 
       if (y > window.scrollY) {
         setScrollDirection("footer up");
       } else if (y < window.scrollY) {
