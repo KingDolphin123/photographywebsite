@@ -13,15 +13,15 @@ const About = () => {
           <p className="abouttext">
             {" "}
             My name is Jacob Lee, I'm an amateur photographer based out of Charlottesville, Virginia. I'm a 
-            current second year undergraduate student at the University of Virginia majoring in computer
-            science. I've been shooting with my trusty Canon 200D for 4+ years. I love opportunities
+            current third year undergraduate student at the University of Virginia majoring in computer
+            science. I shoot with a Canon M6 MarkII and a Canon EOS 200D. I love opportunities
             to capture beautiful moments for people, and I love constantly learning more about people
             and photography!{" "}
           </p>
         </div>
       </div>
       <div className="footer">
-        <p className="footertext">Copyright Jacob Lee 2022</p>
+        <p className="footertext">Copyright Jacob Lee 2022-23</p>
         <a
           href="https://www.instagram.com/jlee_photo_/"
           target="_blank"
