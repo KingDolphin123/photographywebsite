@@ -46,7 +46,7 @@ const Packages = () => {
               alt="solopic"
             />
             <p className="packagestext">Solo Pic</p>
-            <p className="packagestext mon">$75-$100</p>
+            <p className="packagestext mon">$100-$125</p>
             <p onMouseEnter={onHover1} className={PicText}>
               Individual portraits and stills, focused on highlighting
               individual beauty and wonder. 30 minute shoot and 10-15 final
@@ -77,7 +77,7 @@ const Packages = () => {
               alt="soloplucpic"
             />
             <p className="packagestext">Solo Plus Pic</p>
-            <p className="packagestext mon">$100-150</p>
+            <p className="packagestext mon">$125-175</p>
             <p onMouseEnter={onHover3} className={PicText3}>
               Individual portraits and stills, focused on highlighting
               individual beauty and wonder. 45 minute shoot and 20-30 final
