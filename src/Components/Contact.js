@@ -9,23 +9,31 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [messagesend, setMessagesend] = useState("email");
+  const [nosend, setNosend] = useState("email");
   const submit = () => {
-    setMessagesend("email sent");
-    handleRender();
-    const serviceID = "service_gwttkc3";
-    const templateID = "template_8u3euar";
-    const publicKey = "vOAm-rr8fBIQQW1Gi";
-    const params = { userName, email, message };
-    emailjs.send(serviceID, templateID, params, publicKey);
-    setUserName("");
-    setEmail("");
-    setMessage("");
+    if (userName !== "" && email !== "" && message !== "") {
+      setMessagesend("email sent");
+      handleRender();
+      const serviceID = "service_gwttkc3";
+      const templateID = "template_8u3euar";
+      const publicKey = "vOAm-rr8fBIQQW1Gi";
+      const params = { userName, email, message };
+      emailjs.send(serviceID, templateID, params, publicKey);
+      setUserName("");
+      setEmail("");
+      setMessage("");
+    }
+    else{
+      setNosend("email sent");
+      handleRender();
+    }
   };
   const handleRender = () => {
     setTimeout(() => {
-       setMessagesend("email");
+      setMessagesend("email");
+      setNosend("email");
     }, 3000);
-  }
+  };
   return (
     <div className="contactfinal">
       <div className="contact">
@@ -54,9 +62,10 @@ const Contact = () => {
         <button className="inputform but" onClick={submit}>
           Submit
         </button>
-        <p className = {messagesend}>Email Sent!</p>
+        <p className={messagesend}>Email Sent!</p>
+        <p className={nosend}>Please Fill Out All Inputs!</p>
       </div>
-      <div className="footer">
+      <div className="footer oncontact">
         <p className="footertext">Copyright Jacob Lee 2022</p>
         <a
           href="https://www.instagram.com/jlee_photo_/"
