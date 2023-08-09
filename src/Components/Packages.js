@@ -52,7 +52,7 @@ const Packages = () => {
               Solo Pics
             </p>
             <p onMouseEnter={onHover1} className="packagestext mon">
-              $75-$100
+              $100-$125
             </p>
             <p onMouseEnter={onHover1} className={PicText}>
               Individual portraits and stills, focused on highlighting
@@ -96,7 +96,7 @@ const Packages = () => {
               Solo Plus Pics
             </p>
             <p onMouseEnter={onHover3} className="packagestext mon">
-              $100-150
+              $125-175
             </p>
             <p onMouseEnter={onHover3} className={PicText3}>
               Individual portraits and stills, focused on highlighting
