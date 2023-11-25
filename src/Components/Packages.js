@@ -1,7 +1,7 @@
 import "../Css/Packages.css";
 import grouppic from "../photosandassets/finpics/IMG_5426-min.jpg";
 import soloplus from "../photosandassets/IMG_9146-1.jpg";
-import solo from "../photosandassets/finpics/IMG_5227-min.jpg";
+import solo from "../photosandassets/finpics/_MG_1844-min.jpg";
 import insta from "../photosandassets/insta.png";
 import linkedin from "../photosandassets/link.png";
 import { useState } from "react";
